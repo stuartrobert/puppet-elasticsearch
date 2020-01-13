@@ -9,7 +9,6 @@ end
 defaults = {
   '-Xms' => '-Xms2g',
   '-Xmx' => '-Xmx2g',
-  'UseConcMarkSweepGC' => '-XX:+UseConcMarkSweepGC',
   'CMSInitiatingOccupancyFraction=' => '-XX:CMSInitiatingOccupancyFraction=75',
   'UseCMSInitiatingOccupancyOnly' => '-XX:+UseCMSInitiatingOccupancyOnly',
   'AlwaysPreTouch' => '-XX:+AlwaysPreTouch',
@@ -27,6 +26,7 @@ defaults = {
   '-Dlog4j2.disable.jmx' => '-Dlog4j2.disable.jmx=true',
   '-Djava.io.tmpdir' => '-Djava.io.tmpdir=${ES_TMPDIR}',
   'HeapDumpOnOutOfMemoryError' => '-XX:+HeapDumpOnOutOfMemoryError',
+  'UseConcMarkSweepGC' => '8:-XX:+UseConcMarkSweepGC',
   'PrintGCDetails' => '8:-XX:+PrintGCDetails',
   'PrintGCDateStamps' => '8:-XX:+PrintGCDateStamps',
   'PrintTenuringDistribution' => '8:-XX:+PrintTenuringDistribution',
